@@ -1,17 +1,33 @@
-CityTwin — Production-ready starter repository
+# 🌆 CityTwin Foundation Model  
+A Multi-Modal, City-Scale Foundation Model for Real-Time Urban Intelligence
 
-This repository contains a production-ready starter for the CityTwin multi-modal
-foundation model and data-fusion system. It includes:
+![CityTwin Logo](assets/logo.png)
 
-- Multimodal model implementations (small & large GPU-ready)
-- Training scripts: quick, prototype, distributed (DeepSpeed / torchrun)
-- FastAPI serving with model endpoints
-- Dockerfiles: cpu (local) and gpu (production)
-- Terraform skeleton: ECR, S3, EKS, IAM, ASG for GPU builders
-- Helm chart and k8s manifests for deployment
-- GitHub Actions workflows (CI, CD, CodeBuild orchestrator via OIDC)
-- NeRF integration guide & server stub
-- ViT + transformer text encoder integration
-- Runbook, cost estimates, and security guidance
+[![Build & Test](https://img.shields.io/github/actions/workflow/status/Mazhar113/CityTwin-Foundation-Model/ci.yml?label=CI%20Build&logo=github)](../../actions)
+![Python](https://img.shields.io/badge/Python-3.9+-yellow?logo=python)
+![CUDA](https://img.shields.io/badge/CUDA-GPU%20Ready-green?logo=nvidia)
+![Contributors](https://img.shields.io/github/contributors/Mazhar113/CityTwin-Foundation-Model)
+![Issues](https://img.shields.io/github/issues/Mazhar113/CityTwin-Foundation-Model)
 
-See docs/quickstart.md for immediate steps.
+---
+
+## 🚀 Overview
+
+**CityTwin** is a GPU-ready, multi-modal foundation model that fuses:
+
+- 🛰️ **Satellite imagery**
+- 🚗 **Traffic IoT sensors**
+- 🌤 **Weather data**
+- 📊 **Economic indicators**
+- 🗣 **Social media text**
+- 🕸 **Graph-structured city networks**
+
+The system enables real-time reasoning, simulation, and forecasting.
+
+Example query:
+
+> **“Show me areas with high risk of traffic congestion and economic distress in the next 6 hours.”**
+
+
+
+
