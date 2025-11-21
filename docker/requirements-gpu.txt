@@ -1,0 +1,12 @@
+torch==2.2.0+cu121 --extra-index-url https://download.pytorch.org/whl/cu121
+torchvision==0.18.1+cu121 --extra-index-url https://download.pytorch.org/whl/cu121
+timm
+transformers
+pytorch-lightning
+deepspeed
+accelerate
+faiss-cpu
+numpy
+pandas
+opencv-python
+Pillow

@@ -1,0 +1,8 @@
+version: 0.2
+phases:
+  install:
+    commands:
+      - pip install --upgrade awscli
+  build:
+    commands:
+      - echo "This buildspec is a placeholder for orchestrating GPU builds via SSM"

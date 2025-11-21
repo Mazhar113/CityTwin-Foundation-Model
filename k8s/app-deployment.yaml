@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: citytwin-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: citytwin
+  template:
+    metadata:
+      labels:
+        app: citytwin
+    spec:
+      containers:
+      - name: citytwin
+        image: citytwin:latest
+        ports:
+        - containerPort: 8080

@@ -1,0 +1,20 @@
+name: CI -> CodeBuild (OIDC)
+on:
+  push:
+    branches: [ main ]
+jobs:
+  trigger-codebuild:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - name: Configure AWS via OIDC
+        uses: aws-actions/configure-aws-credentials@v2
+        with:
+          role-to-assume: arn:aws:iam::${{ secrets.AWS_ACCOUNT_ID }}:role/${{ secrets.GITHUB_OIDC_ROLE }}
+          aws-region: ${{ secrets.AWS_REGION }}
+      - name: Start CodeBuild
+        run: |
+          aws codebuild start-build --project-name ${{ secrets.CODEBUILD_PROJECT }}
