@@ -24,9 +24,7 @@ A Multi-Modal, City-Scale Foundation Model for Real-Time Urban Intelligence
 
 The system enables real-time reasoning, simulation, and forecasting.
 
-Example query:
 
-> **“Show me areas with high risk of traffic congestion and economic distress in the next 6 hours.”**
 
 
 
